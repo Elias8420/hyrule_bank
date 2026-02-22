@@ -21,7 +21,7 @@ export function LoginForm() {
         name="email" 
         type="email"
         autoComplete="email"
-        className="border border-gray rounded-md p-2"
+        className="border border-gray rounded-md p-2 focus:outline-none"
         placeholder="johndoe@gmail.com"
         />
       </div>
@@ -31,8 +31,8 @@ export function LoginForm() {
         name="password" 
         type="password"
         autoComplete="current-password"
-        className="border border-gray rounded-md p-2"
-        placeholder="****"
+        className="border border-gray rounded-md p-2 focus:outline-none"
+        placeholder="******"
         />
       </div>
 

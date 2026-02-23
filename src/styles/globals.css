@@ -20,8 +20,10 @@
 }
 
 /* Login */
-.form_container {
-  background-image: url('../../public/images/ilustracion-garabato-dibujo-banco-dibujado-mano.png');
+main {
+  color: #ffffff;
+  background-image: url('../../public/images/background.png');
   background-size: cover;
   background-position: center;
+  opacity: 0.4;
 }

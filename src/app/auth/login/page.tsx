@@ -18,7 +18,7 @@ export default function LoginPage() {
         </div>
       </div>
       <figure className="absolute inset-0 flex justify-center items-center translate-x-70 ">
-            <Image src={"/images/piggy.png"} width={450} height={450} alt="piggy" />
+            <Image src={"/images/piggy.png"} width={450} height={450} className="scale-x-[-1]" alt="piggy" />
       </figure>
     </main>
   )

@@ -22,8 +22,6 @@
 /* Login */
 main {
   color: #ffffff;
-  background-image: url('../../public/images/background.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
+  position: relative;
+  z-index: 10;
 }

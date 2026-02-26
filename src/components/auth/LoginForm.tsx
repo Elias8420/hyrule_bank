@@ -37,7 +37,7 @@ export function LoginForm() {
       </div>
 
       <button
-      className="border border-white/20 p-3 rounded-xl text-black bg-white/50 w-40 bg-clip-text text-transparent font-bold"
+      className="border border-white/70 p-3 rounded-xl bg-white/20 w-40 text-white font-bold hover:bg-white/40 transition-all duration-200"
       >
         { "Iniciar Sesión" }
       </button>

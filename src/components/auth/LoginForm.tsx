@@ -14,32 +14,32 @@ export function LoginForm() {
   }
 
   return(
-    <form onSubmit={onSubmit} className="flex flex-col items-center w-96 gap-6">
+    <form onSubmit={onSubmit} className="flex flex-col items-center w-96 gap-7">
       <div className="w-84 flex flex-col">
         <label className="">Email</label>
         <input
         name="email" 
         type="email"
         autoComplete="email"
-        className="border border-gray rounded-md p-2 focus:outline-none"
+        className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
         placeholder="johndoe@gmail.com"
         />
       </div>
       <div className="w-84 flex flex-col">
-        <label className="">Contraseñas</label>
+        <label className="">Contraseña</label>
         <input
         name="password" 
         type="password"
         autoComplete="current-password"
-        className="border border-gray rounded-md p-2 focus:outline-none"
+        className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
         placeholder="******"
         />
       </div>
 
       <button
-      className=""
+      className="border border-white/20 p-3 rounded-xl text-black bg-white/50 w-40 bg-clip-text text-transparent font-bold"
       >
-        { "Iniciar sesion" }
+        { "Iniciar Sesión" }
       </button>
     </form>
   );

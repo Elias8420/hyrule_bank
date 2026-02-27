@@ -18,6 +18,7 @@ export function LoginForm() {
       <div className="w-84 flex flex-col">
         <label className="">Email</label>
         <input
+        required={true}
         name="email" 
         type="email"
         autoComplete="email"
@@ -28,6 +29,7 @@ export function LoginForm() {
       <div className="w-84 flex flex-col">
         <label className="">Contraseña</label>
         <input
+        required={true}
         name="password" 
         type="password"
         autoComplete="current-password"

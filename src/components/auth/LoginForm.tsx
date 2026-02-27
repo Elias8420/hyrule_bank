@@ -43,12 +43,12 @@ export function LoginForm() {
         autoComplete="current-password"
         className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
         placeholder="******"
-        disabled={loading}
         />
       </div>
 
       <button
-      className="border border-white/70 p-3 rounded-xl bg-white/20 w-40 text-white font-bold hover:bg-white/40 transition-all duration-200"
+      className="border border-white/70 p-3 rounded-xl bg-white/20 w-50 text-white font-bold hover:bg-white/40 transition-all duration-200"
+      disabled={loading}
       >
         { loading ? 'Iniciando sesion...' : 'Iniciar Sesión'}
       </button>

@@ -2,6 +2,7 @@
 
 import { LoginAction } from "@/utils/loginAction";
 import { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
 
 export function LoginForm() {
   const [loading, setLoading] = useState<boolean>(false);
@@ -37,14 +38,19 @@ export function LoginForm() {
       </div>
       <div className="w-84 flex flex-col">
         <label className="">Contraseña</label>
-        <input
-        required={true}
-        name="password" 
-        type={ showPassword ? "text" : "password"}
-        autoComplete="current-password"
-        className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
-        placeholder="******"
-        />
+        <div>
+          <input
+          required={true}
+          name="password" 
+          type={ showPassword ? "text" : "password"}
+          autoComplete="current-password"
+          className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
+          placeholder="******"
+          />
+          <button className="">
+            <Eye size={20}/>
+          </button>
+        </div>
       </div>
 
       <button

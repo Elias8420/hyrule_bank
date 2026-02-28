@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export function LoginForm() {
   const [loading, setLoading] = useState<boolean>(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault(); //Evita que al enviar el formulario, recargue la pagina
 
@@ -39,7 +40,7 @@ export function LoginForm() {
         <input
         required={true}
         name="password" 
-        type="password"
+        type={ showPassword ? "text" : "password"}
         autoComplete="current-password"
         className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
         placeholder="******"
@@ -50,7 +51,7 @@ export function LoginForm() {
       className="border border-white/70 p-3 rounded-xl bg-white/20 w-50 text-white font-bold hover:bg-white/40 transition-all duration-200"
       disabled={loading}
       >
-        { loading ? 'Iniciando sesion...' : 'Iniciar Sesión'}
+        { loading ? 'Iniciando sesion...' : 'Iniciar Sesión' }
       </button>
     </form>
   );

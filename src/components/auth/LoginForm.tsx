@@ -50,6 +50,7 @@ export function LoginForm() {
           <button 
           className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer" //Cursor pointer era para que cambie la forma del mouse cuando se coloca sobre este
           type="button" //Se le especifica que es boton para que no haga submit e intente enviar el formulario
+          onClick={() => setShowPassword(!showPassword)}
           >
             <Eye size={20}/>
           </button>

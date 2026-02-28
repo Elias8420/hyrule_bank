@@ -38,23 +38,26 @@ export function LoginForm() {
       </div>
       <div className="w-84 flex flex-col">
         <label className="">Contraseña</label>
-        <div>
+        <div className="relative w-84">
           <input
           required={true}
           name="password" 
           type={ showPassword ? "text" : "password"}
           autoComplete="current-password"
-          className="border border-gray rounded-md p-2 focus:outline-none shadow-lg"
+          className="border border-gray rounded-md p-2 w-full focus:outline-none shadow-lg"
           placeholder="******"
           />
-          <button className="">
+          <button 
+          className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer" //Cursor pointer era para que cambie la forma del mouse cuando se coloca sobre este
+          type="button" //Se le especifica que es boton para que no haga submit e intente enviar el formulario
+          >
             <Eye size={20}/>
           </button>
         </div>
       </div>
 
       <button
-      className="border border-white/70 p-3 rounded-xl bg-white/20 w-50 text-white font-bold hover:bg-white/40 transition-all duration-200"
+      className="border border-white/70 p-3 rounded-xl bg-white/20 w-50 text-white font-bold hover:bg-white/40 transition-all duration-200 cursor-pointer"
       disabled={loading}
       >
         { loading ? 'Iniciando sesion...' : 'Iniciar Sesión' }

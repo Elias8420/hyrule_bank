@@ -52,7 +52,7 @@ export function LoginForm() {
           type="button" //Se le especifica que es boton para que no haga submit e intente enviar el formulario
           onClick={() => setShowPassword(!showPassword)}
           >
-            <Eye size={20}/>
+            { showPassword ? <Eye size={20}/> : <EyeOff size={20}/>}
           </button>
         </div>
       </div>
